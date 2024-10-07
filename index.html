@@ -209,6 +209,336 @@
               </p>
             </div>
           </div>
+          <!-- Offer button -->
+          <div class="col-span-12 mt-12 text-center">
+            <button
+              class="btn bg-white selection:border border-custom-green hover:bg-custom-green hover:border-custom-green transition-colors duration-200 ease-in-out px-8"
+            >
+              <span class="font-bold text-custom-green text-xl"
+                >Buy Tickets</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Seat Booking Container -->
+      <section
+        class="border-t-4 border-custom-green bg-neutral-100 rounded-t-[100px] py-24"
+      >
+        <div class="container mx-auto grid grid-cols-12">
+          <!-- Booking Title -->
+          <div class="col-start-3 col-end-10 text-center mb-12">
+            <h2 class="text-5xl font-extrabold mb-6">P.H Paribahan</h2>
+            <!-- Booking Text -->
+            <p class="text-gray-600 text-lg">
+              Our e-ticket platform offers seamless booking experiences with
+              instant confirmations, allowing you to plan your travels
+              effortlessly.
+            </p>
+          </div>
+          <!-- Bus Information -->
+          <div
+            class="col-span-12 grid grid-cols-12 relative rounded-3xl bg-white gap-6 p-8"
+          >
+            <div class="col-span-8">
+              <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center gap-4">
+                  <!-- Coach Name & Number -->
+                  <img src="./public/images/bus-logo.png" alt="" />
+                  <h2 class="text-2xl font-bold">
+                    Greenline Paribahan
+                    <span class="block text-gray-600 text-lg font-medium"
+                      >Coach-009-WEB ! AC_Business</span
+                    >
+                  </h2>
+                </div>
+                <!-- Available Seat Count -->
+                <div>
+                  <button
+                    class="btn bg-custom-green bg-opacity-10 border-none hover:bg-custom-green hover:bg-opacity-20 transition-colors duration-200 ease-in-out px-8"
+                  >
+                    <img
+                      class="w-6 h-6"
+                      src="./public/images/seat-green.png"
+                      alt=""
+                    />
+                    <span
+                      id="available-seat"
+                      class="font-bold text-custom-green text-lg"
+                      >40</span
+                    >
+                    <span class="font-bold text-custom-green text-lg"
+                      >Seats left</span
+                    >
+                  </button>
+                </div>
+              </div>
+
+              <div class="bg-neutral-100 rounded-3xl p-8 mt-8">
+                <!-- Route info -->
+                <div
+                  class="flex justify-between items-center pb-6 border-b border-dashed border-gray-400"
+                >
+                  <p class="text-gray-500 text-lg font-medium">Route</p>
+                  <p class="text-gray-600 text-lg font-semibold">
+                    Dhaka - Sylhet
+                  </p>
+                </div>
+                <!-- Departure Info -->
+                <div
+                  class="flex justify-between items-center py-6 border-b border-dashed border-gray-400"
+                >
+                  <p class="text-gray-500 text-lg font-medium">
+                    Departure Time
+                  </p>
+                  <p class="text-gray-600 text-lg font-semibold">9:00 pm</p>
+                </div>
+                <!-- Board & Drop Info -->
+                <div
+                  class="flex justify-between items-center py-6 border-b border-dashed border-gray-400"
+                >
+                  <span
+                    class="px-9 py-5 text-gray-600 text-lg font-semibold rounded-2xl bg-neutral-200"
+                  >
+                    Dropping Point - Bogura</span
+                  >
+                  <span
+                    class="px-9 py-5 text-gray-600 text-lg font-semibold rounded-2xl bg-neutral-200"
+                  >
+                    Boarding Point - Laxmipur</span
+                  >
+                  <span
+                    class="px-9 py-5 text-gray-600 text-lg font-semibold rounded-2xl bg-neutral-200"
+                  >
+                    Est. Time - 11 Hour</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Divider -->
+            <img
+              class="absolute h-full right-80"
+              src="./public/images/info-devider.png"
+              alt=""
+            />
+
+            <!-- Seat Cost Info -->
+            <div
+              class="col-start-10 col-end-13 flex flex-col justify-center items-center"
+            >
+              <img src="./public/images/fare.png" alt="" />
+              <h3 class="font-bold text-5xl mt-2">550 Taka</h3>
+              <p class="text-gray-500 font-medium text-xl mt-2">Per Seat</p>
+            </div>
+          </div>
+          <!-- Seats -->
+          <div
+            class="col-span-12 grid grid-cols-12 bg-white rounded-3xl p-8 mt-8 gap-8"
+          >
+            <!-- Seat Selection -->
+            <div
+              class="col-span-7 border-r-2 border-dashed border-gray-500 pr-8"
+            >
+              <h3
+                class="text-xl font-bold border-b border-dashed border-gray-400 pb-5"
+              >
+                Select Your Seats
+              </h3>
+              <!-- Seats icon for available & selected seats -->
+              <div
+                class="flex justify-between items-center py-5 border-b border-dashed border-gray-400"
+              >
+                <!-- Seat icon for available seat -->
+                <div class="flex justify-center items-center gap-3">
+                  <img src="./public/images/seat-gray.png" alt="" />
+                  <span class="text-lg font-medium text-gray-500">
+                    Available</span
+                  >
+                </div>
+                <!-- Seat icon for selected seat -->
+                <div class="flex justify-center items-center gap-3">
+                  <img src="./public/images/seat-green-filled.png" alt="" />
+                  <span class="text-lg font-semibold text-custom-green">
+                    Selected</span
+                  >
+                </div>
+              </div>
+              <!-- Driver's Seat -->
+              <div class="flex justify-end py-5">
+                <span class="btn border-none px-8 bg-neutral-300"
+                  ><img src="./public/images/steering-wheel.png" alt=""
+                /></span>
+              </div>
+              <!-- A Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- A Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >A</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">A1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">A2</button>
+                </div>
+                <!-- A Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">A3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">A4</button>
+                </div>
+              </div>
+              <!-- B Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- B Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >B</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">B1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">B2</button>
+                </div>
+                <!-- B Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">B3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">B4</button>
+                </div>
+              </div>
+              <!-- C Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- C Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >C</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">C1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">C2</button>
+                </div>
+                <!-- C Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">C3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">C4</button>
+                </div>
+              </div>
+              <!-- D Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- D Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >D</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">D1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">D2</button>
+                </div>
+                <!-- D Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">D3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">D4</button>
+                </div>
+              </div>
+              <!-- E Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- E Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >E</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">E1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">E2</button>
+                </div>
+                <!-- E Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">E3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">E4</button>
+                </div>
+              </div>
+              <!-- F Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- F Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >F</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">F1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">F2</button>
+                </div>
+                <!-- F Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">F3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">F4</button>
+                </div>
+              </div>
+              <!-- G Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- G Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >G</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">G1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">G2</button>
+                </div>
+                <!-- G Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">G3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">G4</button>
+                </div>
+              </div>
+              <!-- H Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- H Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >H</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">H1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">H2</button>
+                </div>
+                <!-- H Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">H3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">H4</button>
+                </div>
+              </div>
+              <!-- I Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- I Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >I</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">I1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">I2</button>
+                </div>
+                <!-- I Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">I3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">I4</button>
+                </div>
+              </div>
+              <!-- J Group Seats Row -->
+              <div class="flex justify-between items-center">
+                <!-- J Left Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <span class="text-lg text-gray-600 font-medium mb-5 w-10"
+                    >J</span
+                  >
+                  <button class="btn border-none px-10 mb-5 w-28">J1</button>
+                  <button class="btn border-none px-10 mb-5 w-28">J2</button>
+                </div>
+                <!-- J Right Row -->
+                <div class="flex justify-between items-center gap-8">
+                  <button class="btn border-none px-10 mb-5 w-28">J3</button>
+                  <button class="btn border-none px-10 mb-5 w-28">J4</button>
+                </div>
+              </div>
+            </div>
+            <!-- Selected Seats info -->
+            <div class="col-span-5">
+              <h3
+                class="text-xl font-bold border-b border-dashed border-gray-400 pb-5"
+              >
+                Check Your Selected Seats
+              </h3>
+            </div>
+          </div>
         </div>
       </section>
     </main>
