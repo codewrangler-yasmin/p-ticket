@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./public/styles.css" />
+    <!-- FontAwesome Link -->
+    <script
+      src="https://kit.fontawesome.com/4789f143ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-accent">
+    <!-- Header Container -->
+    <main>
+      <header class="header container mx-auto py-10 relative z-10">
+        <!-- Navbar Section -->
+        <section class="grid grid-cols-12 justify-center items-center">
+          <!-- Logo -->
+          <div class="col-span-2">
+            <h2 class="text-4xl font-extrabold">P-Ticket</h2>
+          </div>
+          <!-- Nav Links -->
+          <div class="col-span-8">
+            <ul class="flex justify-center items-center gap-5">
+              <li
+                class="text-lg font-medium text-custom-green transition-colors duration-200 ease-in-out px-6"
+              >
+                Home
+              </li>
+              <li
+                class="text-lg font-medium text-gray-600 hover:text-custom-green transition-colors duration-200 ease-in-out px-6"
+              >
+                About
+              </li>
+              <li
+                class="text-lg font-medium text-gray-600 hover:text-custom-green transition-colors duration-200 ease-in-out px-6"
+              >
+                Destination
+              </li>
+              <li
+                class="text-lg font-medium text-gray-600 hover:text-custom-green transition-colors duration-200 ease-in-out px-6"
+              >
+                Search
+              </li>
+            </ul>
+          </div>
+          <!-- Nav Button -->
+          <div class="col-span-2 text-right">
+            <button
+              class="btn bg-custom-green bg-opacity-10 border border-custom-green border-opacity-40 hover:bg-custom-green hover:bg-opacity-20 hover:border-custom-green hover:border-opacity-50 transition-colors duration-200 ease-in-out px-8"
+            >
+              <span class="font-bold text-custom-green text-lg">Bus</span>
+              <img class="w-6 h-6" src="./public/images/bus-icon.png" alt="" />
+            </button>
+          </div>
+        </section>
+        <!-- Banner Section -->
+        <section class="container mx-auto">
+          <div
+            class="bg-[url('/public/images/banner.png')] bg-cover bg-center bg-bottom bg-no-repeat w-full h-[75vh] rounded-3xl relative mt-9 py-16"
+          >
+            <!-- Banner gradient layer -->
+            <div
+              class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[rgba(3,7,18,0.60)] to-[rgba(3,7,18,0)] rounded-3xl z-10"
+            >
+              <!-- Banner Content -->
+              <div
+                class="grid grid-cols-12 z-20 absolute top-0 left-0 w-full h-full"
+              >
+                <div
+                  class="col-start-4 col-end-10 flex flex-col justify-center items-center gap-y-6 text-center"
+                >
+                  <!-- Banner Title -->
+                  <h2 class="font-extrabold text-6xl text-white">
+                    End-to-End Travel with
+                    <span class="text-custom-green block">P Paribahan</span>
+                  </h2>
+                  <!-- Banner Text -->
+                  <p class="text-white text-lg">
+                    Enjoy the convenience of managing your tickets anytime,
+                    anywhere, with just a few clicks, ensuring that your journey
+                    is as smooth as possible.
+                  </p>
+                  <!-- Button -->
+                  <button
+                    class="btn bg-custom-green selection:border border-custom-green hover:bg-custom-green hover:border-custom-green transition-colors duration-200 ease-in-out px-8"
+                  >
+                    <span class="font-bold text-gray-900 text-xl"
+                      >Buy Tickets</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Counter Boxes Container -->
+        <section
+          class="container mx-auto grid grid-cols-12 absolute -bottom-5 z-50"
+        >
+          <!-- Counter Boxes Inner -->
+          <div class="col-start-3 col-end-11 grid grid-cols-12 gap-x-6">
+            <!-- Single Counter Box 1 -->
+            <div
+              class="col-span-4 bg-white rounded-2xl border-b-4 border-custom-green px-6 py-8 flex gap-4 items-center"
+            >
+              <!-- Counter Image -->
+              <img src="./public/images/people.png" alt="People" />
+              <p class="text-4xl font-extrabold">
+                500K+
+                <span class="block font-medium text-gray-500 text-base"
+                  >Registered User</span
+                >
+              </p>
+            </div>
+            <!-- Single Counter Box 2 -->
+            <div
+              class="col-span-4 bg-white rounded-2xl border-b-4 border-custom-green px-6 py-8 flex gap-4 items-center"
+            >
+              <!-- Counter Image -->
+              <img src="./public/images/ticket-cupon.png" alt="People" />
+              <p class="text-4xl font-extrabold">
+                1.7 lacks
+                <span class="block font-medium text-gray-500 text-base"
+                  >Tickets Sold</span
+                >
+              </p>
+            </div>
+            <!-- Single Counter Box 3 -->
+            <div
+              class="col-span-4 bg-white rounded-2xl border-b-4 border-custom-green px-6 py-8 flex gap-4 items-center"
+            >
+              <!-- Counter Image -->
+              <img src="./public/images/stoppage.png" alt="People" />
+              <p class="text-4xl font-extrabold">
+                80K+
+                <span class="block font-medium text-gray-500 text-base"
+                  >Rental Partners</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- Coupon Offer Container -->
+      <section class="container mx-auto py-28">
+        <div class="grid grid-cols-12 gap-x-8">
+          <!-- Offer Title -->
+          <div class="col-span-12 text-center mb-12">
+            <h2 class="text-5xl font-extrabold">Best offers for you</h2>
+          </div>
+          <!-- Coupon Boxes -->
+          <!-- Coupon Box 1 -->
+          <div
+            class="col-span-6 rounded-3xl bg-custom-yellow p-12 flex justify-between items-center relative"
+          >
+            <!-- Offer time -->
+            <div>
+              <h3 class="font-extrabold text-7xl mt-2">15% Off</h3>
+              <p class="text-black font-medium text-base mt-2">
+                on your next purchase
+              </p>
+              <p class="text-gray-700 font-normal text-base mt-2">
+                use by January 2025
+              </p>
+            </div>
+            <!-- Divider -->
+            <img
+              class="absolute h-full right-72"
+              src="./public/images/cupon-devider.png"
+              alt=""
+            />
+            <!-- Offer time -->
+            <div>
+              <h3 class="font-bold text-5xl mt-2">New15</h3>
+              <p class="text-gray-700 font-normal text-base mt-2">
+                Coupon code
+              </p>
+            </div>
+          </div>
+          <!-- Coupon Box 2 -->
+          <div
+            class="col-span-6 rounded-3xl bg-custom-salmon p-12 flex justify-between items-center relative"
+          >
+            <!-- Offer time -->
+            <div>
+              <h3 class="font-extrabold text-7xl mt-2">20% Off</h3>
+              <p class="text-black font-medium text-base mt-2">
+                on your next purchase
+              </p>
+              <p class="text-gray-700 font-normal text-base mt-2">
+                use by January 2025
+              </p>
+            </div>
+            <!-- Divider -->
+            <img
+              class="absolute h-full right-72"
+              src="./public/images/cupon-devider.png"
+              alt=""
+            />
+            <!-- Offer time -->
+            <div>
+              <h3 class="font-bold text-5xl mt-2">Couple20</h3>
+              <p class="text-gray-700 font-normal text-base mt-2">
+                Coupon code
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./public/js/script.js"></script>
+  </body>
+</html>
