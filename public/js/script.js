@@ -20,6 +20,7 @@
 // Global Variables
 
 const stickyHeader = document.getElementById("sticky-header");
+const header = document.getElementById("header");
 const mobileMenuContainer = document.getElementById("mobile-menu-container");
 const mobileMenuBars = document.getElementById("mobile-menu-bars");
 const mobileMenuClose = document.getElementById("mobile-menu-close");
@@ -39,11 +40,11 @@ const modalContainer = document.getElementById("modal-container");
 const continueBtn = document.getElementById("modal-close-btn");
 
 // sticky header on scroll
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
-    stickyHeader.classList.add("py-6");
-  }
-});
+// window.addEventListener("scroll", function () {
+//   if (window.scrollY > 100) {
+//     stickyHeader.classList.add("py-6");
+//   }
+// });
 
 // add event on mobile menu
 mobileMenuBars.addEventListener("click", function () {
