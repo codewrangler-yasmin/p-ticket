@@ -537,10 +537,197 @@
               >
                 Check Your Selected Seats
               </h3>
+              <div class="p-8 rounded-2xl bg-neutral-200 my-6">
+                <!-- Selected Seats Headings -->
+                <div
+                  class="flex justify-between items-center border-b border-dashed border-gray-400 pb-5"
+                >
+                  <h4 class="text-base font-bold w-1/3">
+                    Seat
+                    <span
+                      class="bg-custom-green rounded-xl text-sm text-white px-2 font-bold"
+                      >0</span
+                    >
+                  </h4>
+                  <h4 class="text-base font-bold w-1/3">Class</h4>
+                  <h4 class="text-base font-bold w-1/3 text-right">Price</h4>
+                </div>
+                <!-- Selected Seat Dynamically goes here -->
+                <div
+                  id="selected-seats"
+                  class="flex justify-center items-center border-b border-gray-400 py-2"
+                >
+                  <h4 class="text-base font-semibold text-stone-400">
+                    Selected seats will show here.
+                  </h4>
+                </div>
+                <!-- <div
+                  id="selected-seats"
+                  class="flex justify-between items-center border-b border-gray-400 py-2"
+                >
+                  <p class="text-base font-medium text-stone-500 w-1/3">C1</p>
+                  <p class="text-base font-medium text-stone-500 w-1/3">
+                    Economy
+                  </p>
+                  <p
+                    class="text-base font-medium text-stone-500 w-1/3 text-right"
+                  >
+                    550
+                  </p>
+                </div> -->
+
+                <!-- Total Price -->
+                <div class="flex justify-between items-center py-5">
+                  <h4 class="text-base font-semibold">Total Price</h4>
+                  <h4 class="text-base font-semibold">
+                    <span>BDT</span> <span id="total-price">00</span>
+                  </h4>
+                </div>
+
+                <!-- Coupon Field -->
+                <div class="bg-white rounded-xl p-2 flex">
+                  <input
+                    id="coupon"
+                    class="px-4 py-3 outline-none focus:ring-0 w-3/4"
+                    type="text"
+                    placeholder="Have any coupon?"
+                  />
+                  <button
+                    class="btn bg-custom-green text-white border-none w-1/4 text-lg font-bold px-6"
+                  >
+                    Apply
+                  </button>
+                </div>
+
+                <!-- Total Price -->
+                <div class="flex justify-between items-center py-5">
+                  <h4 class="text-base font-semibold">Grand Total</h4>
+                  <h4 class="text-base font-semibold">
+                    <span>BDT</span> <span id="grand-total">00</span>
+                  </h4>
+                </div>
+              </div>
+              <!-- Passenger Info -->
+              <div>
+                <!-- Passenger Name -->
+                <label for="" class="form-control w-full my-3">
+                  <span class="text-lg font-bold mb-4">Passenger Name*</span>
+                  <!-- Name Input -->
+                  <input
+                    id="passenger-name"
+                    class="p-5 outline-none focus:ring-0 border border-gray-200 rounded-xl"
+                    type="text"
+                    placeholder="Enter Your Name"
+                    disabled
+                  />
+                </label>
+                <!-- Passenger Phone Number -->
+                <label for="" class="form-control w-full my-3">
+                  <span class="text-lg font-bold mb-4">Phone Number*</span>
+                  <!-- Phone Number Input -->
+                  <input
+                    id="passenger-name"
+                    class="p-5 outline-none focus:ring-0 border border-gray-200 rounded-xl"
+                    type="text"
+                    placeholder="Enter Your Phone Number"
+                    disabled
+                  />
+                </label>
+                <!-- Passenger Email ID -->
+                <label for="" class="form-control w-full my-3">
+                  <span class="text-lg font-bold mb-4">Email ID*</span>
+                  <!-- Email Input -->
+                  <input
+                    id="passenger-email"
+                    class="p-5 outline-none focus:ring-0 border border-gray-200 rounded-xl"
+                    type="text"
+                    placeholder="Enter Your Email ID"
+                    disabled
+                  />
+                </label>
+                <!-- Button -->
+                <button
+                  id="next-btn"
+                  class="btn bg-custom-green w-full border-none text-white font-bold rounded-lg text-lg transition-colors duration-200 ease-in-out px-8"
+                  disabled
+                >
+                  Next
+                </button>
+              </div>
+              <div class="flex justify-around items-center py-4">
+                <a
+                  href="#"
+                  class="hover:text-custom-green hover:border-custom-green transition-colors duration-200 text-base font-medium text-stone-500 border-b border-stone-500"
+                >
+                  Terms and Conditions
+                </a>
+                <a
+                  href="#"
+                  class="hover:text-custom-green hover:border-custom-green transition-colors duration-200 text-base font-medium text-stone-500 border-b border-stone-500"
+                >
+                  Cancellation Policy
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Footer Container -->
+      <footer class="bg-stone-900 py-28">
+        <div
+          class="container mx-auto grid grid-cols-12 pb-12 border-b border-dashed border-stone-400"
+        >
+          <div class="col-span-6">
+            <div>
+              <h3 class="text-white font-extrabold text-4xl mb-5">P-Ticket</h3>
+              <p class="text-base font-light text-stone-400">
+                P-Ticket is a digital platform to make your <br />daily
+                commuting better.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-6">
+            <div class="flex flex-col items-end justify-start">
+              <h3 class="text-white font-semibold text-2xl mb-5">
+                Download our app
+              </h3>
+              <img
+                class="w-[189px] h-[56px]"
+                src="./public/images/google-play.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Copyright Container -->
+        <div class="container mx-auto grid grid-cols-12 pt-8">
+          <div class="col-span-6">
+            <p class="text-base font-light text-stone-400">
+              &copy; all rights reserved, P-Ticket services limited.2024
+            </p>
+          </div>
+          <div class="col-span-6 flex items-center justify-end">
+            <a
+              href="#"
+              class="hover:text-custom-green hover:border-custom-green transition-colors duration-200 text-base font-medium text-white mx-4"
+            >
+              Terms and Conditions
+            </a>
+            <a
+              href="#"
+              class="hover:text-custom-green hover:border-custom-green transition-colors duration-200 text-base font-medium text-white mx-4"
+            >
+              Return & Refund Policy
+            </a>
+            <a
+              href="#"
+              class="hover:text-custom-green hover:border-custom-green transition-colors duration-200 text-base font-medium text-white mx-4"
+            >
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="./public/js/script.js"></script>
   </body>
