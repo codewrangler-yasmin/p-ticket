@@ -19,6 +19,10 @@
 
 // Global Variables
 
+const stickyHeader = document.getElementById("sticky-header");
+const mobileMenuContainer = document.getElementById("mobile-menu-container");
+const mobileMenuBars = document.getElementById("mobile-menu-bars");
+const mobileMenuClose = document.getElementById("mobile-menu-close");
 const availableSeats = document.getElementById("available-seat");
 const selectedSeats = document.getElementById("selected-seats");
 const seatCount = document.getElementById("seat-count");
@@ -33,6 +37,32 @@ const passengerEmail = document.getElementById("passenger-email");
 const infoSubmit = document.getElementById("info-submit");
 const modalContainer = document.getElementById("modal-container");
 const continueBtn = document.getElementById("modal-close-btn");
+
+// sticky header on scroll
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100) {
+    stickyHeader.classList.add("py-6");
+  }
+});
+
+// add event on mobile menu
+mobileMenuBars.addEventListener("click", function () {
+  console.log("menu-clicked");
+  // Show mobile after clicking on mobile menu bars
+  mobileMenuContainer.classList.remove("hidden");
+});
+
+// close mobile menu
+mobileMenuClose.addEventListener("click", function () {
+  mobileMenuContainer.classList.add("hidden");
+});
+
+// Close the mobile menu by clicking outside of the menu
+window.addEventListener("click", function (event) {
+  if (event.target === mobileMenuContainer) {
+    mobileMenuContainer.classList.add("hidden");
+  }
+});
 
 // Select seats
 let seatName = [];
@@ -146,7 +176,8 @@ passengerEmail.addEventListener("input", function () {
 });
 
 // add event to submit button
-infoSubmit.addEventListener("click", function () {
+infoSubmit.addEventListener("click", function (event) {
+  event.preventDefault();
   // Show modal after clicking info submit button
   modalContainer.classList.remove("hidden");
 });
@@ -195,8 +226,10 @@ applyCoupon.addEventListener("click", function () {
 
 // close modal to reload the window
 continueBtn.addEventListener("click", function () {
+  modalContainer.classList.add("hidden");
   window.location.reload();
 });
+
 // close modal by clicking on window
 window.addEventListener("click", function (event) {
   if (event.target === modalContainer) {
