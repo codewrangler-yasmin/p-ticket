@@ -669,6 +669,36 @@
                 </a>
               </div>
             </div>
+            <!-- Modal Container -->
+
+            <div
+              id="modal-container"
+              class="hidden fixed top-0 left-0 w-full h-full z-10 bg-black bg-opacity-20"
+            >
+              <!-- Modal -->
+              <div
+                class="bg-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/3 py-12 px-16 rounded-2xl shadow-lg text-xl flex flex-col justify-between items-center gap-y-5 text-center"
+              >
+                <img src="./public/images/success.png" alt="" />
+                <span class="text-green-600 font-semibold text-2xl"
+                  >Success</span
+                >
+                <p class="text-gray-800 text-lg font-semibold mb-0">
+                  Thank you for Booking Our Bus Seats. <br />
+                  We are working hard to find the best service and deals for
+                  you.
+                </p>
+                <p class="text-lg font-medium text-gray-500">
+                  Shortly you will find a confirmation in your email.
+                </p>
+                <button
+                  id="close-btn"
+                  class="btn bg-green-600 px-20 rounded-full text-white font-semibold text-lg"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
