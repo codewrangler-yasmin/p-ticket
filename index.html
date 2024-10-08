@@ -85,13 +85,15 @@
                     is as smooth as possible.
                   </p>
                   <!-- Button -->
-                  <button
-                    class="btn bg-custom-green selection:border border-custom-green hover:bg-custom-green hover:border-custom-green transition-colors duration-200 ease-in-out px-8"
-                  >
-                    <span class="font-bold text-gray-900 text-xl"
-                      >Buy Tickets</span
+                  <a href="#seat-booking">
+                    <button
+                      class="btn bg-custom-green selection:border border-custom-green hover:bg-custom-green hover:border-custom-green transition-colors duration-200 ease-in-out px-8"
                     >
-                  </button>
+                      <span class="font-bold text-gray-900 text-xl"
+                        >Buy Tickets</span
+                      >
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
@@ -223,6 +225,7 @@
       </section>
       <!-- Seat Booking Container -->
       <section
+        id="seat-booking"
         class="border-t-4 border-custom-green bg-neutral-100 rounded-t-[100px] py-24"
       >
         <div class="container mx-auto grid grid-cols-12">
@@ -376,13 +379,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >A</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">A1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">A2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    A1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    A2
+                  </button>
                 </div>
                 <!-- A Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">A3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">A4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    A3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    A4
+                  </button>
                 </div>
               </div>
               <!-- B Group Seats Row -->
@@ -392,13 +415,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >B</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">B1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">B2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    B1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    B2
+                  </button>
                 </div>
                 <!-- B Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">B3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">B4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    B3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    B4
+                  </button>
                 </div>
               </div>
               <!-- C Group Seats Row -->
@@ -408,13 +451,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >C</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">C1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">C2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    C1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    C2
+                  </button>
                 </div>
                 <!-- C Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">C3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">C4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    C3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    C4
+                  </button>
                 </div>
               </div>
               <!-- D Group Seats Row -->
@@ -424,13 +487,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >D</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">D1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">D2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    D1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    D2
+                  </button>
                 </div>
                 <!-- D Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">D3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">D4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    D3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    D4
+                  </button>
                 </div>
               </div>
               <!-- E Group Seats Row -->
@@ -440,13 +523,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >E</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">E1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">E2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    E1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    E2
+                  </button>
                 </div>
                 <!-- E Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">E3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">E4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    E3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    E4
+                  </button>
                 </div>
               </div>
               <!-- F Group Seats Row -->
@@ -456,13 +559,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >F</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">F1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">F2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    F1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    F2
+                  </button>
                 </div>
                 <!-- F Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">F3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">F4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    F3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    F4
+                  </button>
                 </div>
               </div>
               <!-- G Group Seats Row -->
@@ -472,13 +595,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >G</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">G1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">G2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    G1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    G2
+                  </button>
                 </div>
                 <!-- G Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">G3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">G4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    G3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    G4
+                  </button>
                 </div>
               </div>
               <!-- H Group Seats Row -->
@@ -488,13 +631,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >H</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">H1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">H2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    H1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    H2
+                  </button>
                 </div>
                 <!-- H Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">H3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">H4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    H3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    H4
+                  </button>
                 </div>
               </div>
               <!-- I Group Seats Row -->
@@ -504,13 +667,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >I</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">I1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">I2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    I1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    I2
+                  </button>
                 </div>
                 <!-- I Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">I3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">I4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    I3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    I4
+                  </button>
                 </div>
               </div>
               <!-- J Group Seats Row -->
@@ -520,13 +703,33 @@
                   <span class="text-lg text-gray-600 font-medium mb-5 w-10"
                     >J</span
                   >
-                  <button class="btn border-none px-10 mb-5 w-28">J1</button>
-                  <button class="btn border-none px-10 mb-5 w-28">J2</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    J1
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    J2
+                  </button>
                 </div>
                 <!-- J Right Row -->
                 <div class="flex justify-between items-center gap-8">
-                  <button class="btn border-none px-10 mb-5 w-28">J3</button>
-                  <button class="btn border-none px-10 mb-5 w-28">J4</button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    J3
+                  </button>
+                  <button
+                    onclick="selectSeat(this)"
+                    class="btn border-none px-10 mb-5 w-28"
+                  >
+                    J4
+                  </button>
                 </div>
               </div>
             </div>
@@ -537,7 +740,7 @@
               >
                 Check Your Selected Seats
               </h3>
-              <div class="p-8 rounded-2xl bg-neutral-200 my-6">
+              <div class="p-8 rounded-2xl bg-stone-100 my-6">
                 <!-- Selected Seats Headings -->
                 <div
                   class="flex justify-between items-center border-b border-dashed border-gray-400 pb-5"
@@ -545,70 +748,87 @@
                   <h4 class="text-base font-bold w-1/3">
                     Seat
                     <span
+                      id="seat-count"
                       class="bg-custom-green rounded-xl text-sm text-white px-2 font-bold"
                       >0</span
                     >
                   </h4>
-                  <h4 class="text-base font-bold w-1/3">Class</h4>
+                  <h4 class="text-base font-bold w-1/3 text-center">Class</h4>
                   <h4 class="text-base font-bold w-1/3 text-right">Price</h4>
                 </div>
                 <!-- Selected Seat Dynamically goes here -->
                 <div
                   id="selected-seats"
-                  class="flex justify-center items-center border-b border-gray-400 py-2"
+                  class="flex flex-col border-b border-gray-400 py-2"
                 >
-                  <h4 class="text-base font-semibold text-stone-400">
+                  <h4
+                    id="default-text"
+                    class="text-base font-semibold text-stone-400 text-center"
+                  >
                     Selected seats will show here.
                   </h4>
                 </div>
                 <!-- <div
-                  id="selected-seats"
-                  class="flex justify-between items-center border-b border-gray-400 py-2"
+                  class="flex justify-between items-center border-b border-dashed border-gray-400 py-5"
                 >
-                  <p class="text-base font-medium text-stone-500 w-1/3">C1</p>
-                  <p class="text-base font-medium text-stone-500 w-1/3">
+                  <span class="text-base font-medium text-stone-500 w-1/3">C1</span>
+                  <span class="text-base font-medium text-stone-500 w-1/3">
                     Economy
-                  </p>
-                  <p
+                  </span>
+                  <span
                     class="text-base font-medium text-stone-500 w-1/3 text-right"
                   >
                     550
-                  </p>
+                  </span>
                 </div> -->
 
-                <!-- Total Price -->
                 <div class="flex justify-between items-center py-5">
                   <h4 class="text-base font-semibold">Total Price</h4>
                   <h4 class="text-base font-semibold">
-                    <span>BDT</span> <span id="total-price">00</span>
+                    <span>BDT:</span> <span id="total-price">00</span>
                   </h4>
                 </div>
-
+                <!-- Discounted Price -->
+                <div id="discount">
+                  <!-- <div
+                    class="flex justify-between items-center border-b border-dashed border-gray-400"
+                  >
+                  <h4 class="text-base font-semibold">Discount</h4>
+                  <h4 class="text-base font-semibold">
+                    <span>-BDT:</span> <span>00</span>
+                  </h4></div> -->
+                </div>
                 <!-- Coupon Field -->
-                <div class="bg-white rounded-xl p-2 flex">
+                <div id="coupon-container" class="bg-white rounded-xl p-2 flex">
                   <input
                     id="coupon"
                     class="px-4 py-3 outline-none focus:ring-0 w-3/4"
                     type="text"
                     placeholder="Have any coupon?"
+                    disabled
                   />
                   <button
+                    id="apply-coupon"
                     class="btn bg-custom-green text-white border-none w-1/4 text-lg font-bold px-6"
+                    disabled
                   >
                     Apply
                   </button>
                 </div>
 
-                <!-- Total Price -->
-                <div class="flex justify-between items-center py-5">
-                  <h4 class="text-base font-semibold">Grand Total</h4>
-                  <h4 class="text-base font-semibold">
-                    <span>BDT</span> <span id="grand-total">00</span>
-                  </h4>
+                <!--  Grand Total -->
+                <div
+                  id="grand-total-container"
+                  class="flex justify-between items-center"
+                >
+                  <!-- <h4 class="text-base font-semibold py-5">Grand Total</h4>
+                  <h4 class="text-base font-semibold py-5">
+                    <span>BDT:</span> <span id="grand-total">00</span>
+                  </h4> -->
                 </div>
               </div>
               <!-- Passenger Info -->
-              <div>
+              <form>
                 <!-- Passenger Name -->
                 <label for="" class="form-control w-full my-3">
                   <span class="text-lg font-bold mb-4">Passenger Name*</span>
@@ -620,18 +840,33 @@
                     placeholder="Enter Your Name"
                     disabled
                   />
+                  <p
+                    id="name-error"
+                    class="text-red-600 text-sm font-medium mt-2 hidden"
+                  >
+                    ⚠️ Please provide a valid name!
+                  </p>
                 </label>
                 <!-- Passenger Phone Number -->
                 <label for="" class="form-control w-full my-3">
                   <span class="text-lg font-bold mb-4">Phone Number*</span>
                   <!-- Phone Number Input -->
                   <input
-                    id="passenger-name"
+                    id="phone-number"
                     class="p-5 outline-none focus:ring-0 border border-gray-200 rounded-xl"
-                    type="text"
+                    type="number"
                     placeholder="Enter Your Phone Number"
                     disabled
                   />
+                  <p
+                    id="phone-error"
+                    class="text-red-600 text-sm font-medium mt-2 hidden"
+                  >
+                    <span class="block"
+                      >⚠️ Please provide a valid phone number, which contains at
+                      least 11 digits!</span
+                    >
+                  </p>
                 </label>
                 <!-- Passenger Email ID -->
                 <label for="" class="form-control w-full my-3">
@@ -644,16 +879,25 @@
                     placeholder="Enter Your Email ID"
                     disabled
                   />
+                  <p
+                    id="email-error"
+                    class="text-red-600 text-sm font-medium mt-2 hidden"
+                  >
+                    <span class="block"
+                      >⚠️ Please provide a valid email ID, which contains '@' &
+                      '.com'</span
+                    >
+                  </p>
                 </label>
                 <!-- Button -->
                 <button
-                  id="next-btn"
+                  id="info-submit"
                   class="btn bg-custom-green w-full border-none text-white font-bold rounded-lg text-lg transition-colors duration-200 ease-in-out px-8"
                   disabled
                 >
                   Next
                 </button>
-              </div>
+              </form>
               <div class="flex justify-around items-center py-4">
                 <a
                   href="#"
@@ -692,7 +936,7 @@
                   Shortly you will find a confirmation in your email.
                 </p>
                 <button
-                  id="close-btn"
+                  id="modal-close-btn"
                   class="btn bg-green-600 px-20 rounded-full text-white font-semibold text-lg"
                 >
                   Continue
